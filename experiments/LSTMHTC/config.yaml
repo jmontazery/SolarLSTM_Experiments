@@ -1,0 +1,23 @@
+experiment_name: LSTMHTC
+model_type: Single LSTM
+granularity: hourly
+feature_code: TC
+input_features:
+  - solar_energy_production
+  - temperature
+  - month
+  - season
+  - year
+target: solar_energy_production
+parameter_count: 71168
+main_script: LSTMHTC.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 93.34
+r2_6_12_hours: 90.82
+r2_12_18_hours: 91.0
+r2_18_24_hours: 90.84
+mean_r2: 91.5
+std_r2: 1.65

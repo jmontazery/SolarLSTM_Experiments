@@ -1,0 +1,20 @@
+experiment_name: BiQT
+model_type: Bidirectional LSTM
+granularity: quarter-hourly
+feature_code: T
+input_features:
+  - solar_energy_production
+  - temperature
+target: solar_energy_production
+parameter_count: 138240
+main_script: BiQT.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 95.07
+r2_6_12_hours: 90.18
+r2_12_18_hours: 89.72
+r2_18_24_hours: 90.78
+mean_r2: 91.44
+std_r2: 2.56

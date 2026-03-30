@@ -1,0 +1,23 @@
+experiment_name: BiQTC
+model_type: Bidirectional LSTM
+granularity: quarter-hourly
+feature_code: TC
+input_features:
+  - solar_energy_production
+  - temperature
+  - month
+  - season
+  - year
+target: solar_energy_production
+parameter_count: 142336
+main_script: BiQTC.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 89.66
+r2_6_12_hours: 84.56
+r2_12_18_hours: 87.06
+r2_18_24_hours: 90.4
+mean_r2: 87.92
+std_r2: 3.12

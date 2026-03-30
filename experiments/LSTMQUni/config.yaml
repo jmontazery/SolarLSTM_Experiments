@@ -1,0 +1,19 @@
+experiment_name: LSTMQUni
+model_type: Single LSTM
+granularity: quarter-hourly
+feature_code: Uni
+input_features:
+  - solar_energy_production
+target: solar_energy_production
+parameter_count: 68608
+main_script: LSTMQUni.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 86.35
+r2_6_12_hours: 78.77
+r2_12_18_hours: 83.43
+r2_18_24_hours: 89.04
+mean_r2: 84.4
+std_r2: 5.16

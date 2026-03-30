@@ -1,0 +1,19 @@
+experiment_name: LSTMHUni
+model_type: Single LSTM
+granularity: hourly
+feature_code: Uni
+input_features:
+  - solar_energy_production
+target: solar_energy_production
+parameter_count: 68608
+main_script: LSTMHUni.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 92.12
+r2_6_12_hours: 88.45
+r2_12_18_hours: 89.3
+r2_18_24_hours: 90.76
+mean_r2: 90.16
+std_r2: 2.2

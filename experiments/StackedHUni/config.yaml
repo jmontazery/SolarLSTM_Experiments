@@ -1,0 +1,19 @@
+experiment_name: StackedHUni
+model_type: Stacked LSTM
+granularity: hourly
+feature_code: Uni
+input_features:
+  - solar_energy_production
+target: solar_energy_production
+parameter_count: 131584
+main_script: StackedHUni.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 92.16
+r2_6_12_hours: 88.89
+r2_12_18_hours: 89.73
+r2_18_24_hours: 90.48
+mean_r2: 90.32
+std_r2: 1.81

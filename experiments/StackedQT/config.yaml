@@ -1,0 +1,20 @@
+experiment_name: StackedQT
+model_type: Stacked LSTM
+granularity: quarter-hourly
+feature_code: T
+input_features:
+  - solar_energy_production
+  - temperature
+target: solar_energy_production
+parameter_count: 131584
+main_script: StackedQT.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 83.74
+r2_6_12_hours: 82.11
+r2_12_18_hours: 87.4
+r2_18_24_hours: 89.76
+mean_r2: 85.75
+std_r2: 4.14

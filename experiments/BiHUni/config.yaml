@@ -1,0 +1,19 @@
+experiment_name: BiHUni
+model_type: Bidirectional LSTM
+granularity: hourly
+feature_code: Uni
+input_features:
+  - solar_energy_production
+target: solar_energy_production
+parameter_count: 137216
+main_script: BiHUni.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 91.66
+r2_6_12_hours: 88.54
+r2_12_18_hours: 89.3
+r2_18_24_hours: 90.52
+mean_r2: 90.0
+std_r2: 1.89

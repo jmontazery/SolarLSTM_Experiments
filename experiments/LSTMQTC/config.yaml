@@ -1,0 +1,23 @@
+experiment_name: LSTMQTC
+model_type: Single LSTM
+granularity: quarter-hourly
+feature_code: TC
+input_features:
+  - solar_energy_production
+  - temperature
+  - month
+  - season
+  - year
+target: solar_energy_production
+parameter_count: 71168
+main_script: LSTMQTC.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 83.77
+r2_6_12_hours: 78.96
+r2_12_18_hours: 86.01
+r2_18_24_hours: 89.96
+mean_r2: 84.68
+std_r2: 5.43

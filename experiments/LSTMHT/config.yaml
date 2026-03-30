@@ -1,0 +1,20 @@
+experiment_name: LSTMHT
+model_type: Single LSTM
+granularity: hourly
+feature_code: T
+input_features:
+  - solar_energy_production
+  - temperature
+target: solar_energy_production
+parameter_count: 69120
+main_script: LSTMHT.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 93.17
+r2_6_12_hours: 89.58
+r2_12_18_hours: 89.35
+r2_18_24_hours: 90.56
+mean_r2: 90.66
+std_r2: 2.08

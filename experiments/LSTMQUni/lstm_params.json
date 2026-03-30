@@ -1,0 +1,36 @@
+{
+    "train_split": 175200,
+    "tf_random_seed": 13,
+    "batch_size": 2688,
+    "learning_rate": 0.001,
+    "future_target": 96,
+    "STEP": 1,
+    "seq_size": 672,
+    "validation_split": 0.8,
+    "epochs": 100,
+    "model_types": [
+        "single_lstm",
+        "stacked_lstm",
+        "bidirectional_lstm"
+    ],
+    "best_params": {
+        "single_lstm": {
+            "dense_units": 128.0,
+            "dropout": 0.2,
+            "learning_rate": 0.001,
+            "units": 128.0
+        },
+        "stacked_lstm": {
+            "dense_units": 128.0,
+            "dropout": 0.2,
+            "learning_rate": 0.001,
+            "units": 128.0
+        },
+        "bidirectional_lstm": {
+            "dense_units": 128.0,
+            "dropout": 0.2,
+            "learning_rate": 0.001,
+            "units": 128.0
+        }
+    }
+}

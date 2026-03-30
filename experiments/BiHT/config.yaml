@@ -1,0 +1,20 @@
+experiment_name: BiHT
+model_type: Bidirectional LSTM
+granularity: hourly
+feature_code: T
+input_features:
+  - solar_energy_production
+  - temperature
+target: solar_energy_production
+parameter_count: 138240
+main_script: BiHT.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 93.76
+r2_6_12_hours: 90.74
+r2_12_18_hours: 90.15
+r2_18_24_hours: 90.89
+mean_r2: 91.38
+std_r2: 1.85

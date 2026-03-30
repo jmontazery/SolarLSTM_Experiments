@@ -1,0 +1,23 @@
+experiment_name: BiHTC
+model_type: Bidirectional LSTM
+granularity: hourly
+feature_code: TC
+input_features:
+  - solar_energy_production
+  - temperature
+  - month
+  - season
+  - year
+target: solar_energy_production
+parameter_count: 142336
+main_script: BiHTC.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 92.7
+r2_6_12_hours: 90.44
+r2_12_18_hours: 90.17
+r2_18_24_hours: 90.62
+mean_r2: 90.98
+std_r2: 1.5

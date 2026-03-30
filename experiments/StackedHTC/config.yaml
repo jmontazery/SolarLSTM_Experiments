@@ -1,0 +1,23 @@
+experiment_name: StackedHTC
+model_type: Stacked LSTM
+granularity: hourly
+feature_code: TC
+input_features:
+  - solar_energy_production
+  - temperature
+  - month
+  - season
+  - year
+target: solar_energy_production
+parameter_count: 131584
+main_script: StackedHTC.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 93.0
+r2_6_12_hours: 91.41
+r2_12_18_hours: 91.83
+r2_18_24_hours: 91.91
+mean_r2: 92.03
+std_r2: 1.27

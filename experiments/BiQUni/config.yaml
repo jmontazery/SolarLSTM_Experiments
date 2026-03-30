@@ -1,0 +1,19 @@
+experiment_name: BiQUni
+model_type: Bidirectional LSTM
+granularity: quarter-hourly
+feature_code: Uni
+input_features:
+  - solar_energy_production
+target: solar_energy_production
+parameter_count: 137216
+main_script: BiQUni.py
+saved_model_path: best_model.keras
+plots_path: plots/
+results_path: results/
+models_path: models/
+r2_0_6_hours: 90.25
+r2_6_12_hours: 84.66
+r2_12_18_hours: 85.98
+r2_18_24_hours: 89.7
+mean_r2: 87.65
+std_r2: 3.19
